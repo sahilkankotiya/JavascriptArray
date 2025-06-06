@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <div id="box">
+        <div id="msg"></div>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button> click me</button>
+     </div> -->
+
+<!-- <p id="target">this is original paragraph</p> -->
+
+    <!-- <div id="outer">
+        Hi!!
+    </div> -->
+    <!-- <div id="box">
+        <p id="old">old child</p>
+    </div> -->
+
+      <ul id="fruits">
+        <li>orange</li>
+      </ul>
+
+
+    <script>
+        // let newDiv = document.createElement("div")
+        // newDiv.textContent = "Hello How are you ??"
+        
+        // document.getElementById("box").appendchild(newDiv)
+
+        // document.getElementById("msg").innerHTML="<p>Welcome to Parul University</p>"''
+    //    let newPara = document.createElement("p");
+    //    newPara.textContent="Welcome to Parul University"
+    //    document.getElementById("target").after(newPara);
+
+    //    let box = document.getElementById("target");
+    //    box.append("Hello, How are you ?")
+    //    box.prepend("Good Morning")
+        
+    //    document.getElementById("outer").insertAdjacentHTML("afterend",
+    //     "<p>Hello World</p>");
+    
+    //    let newPara = document.createElement("p")
+    //    newPara.textcontent="New One"
+    //    let oldP = document.getElementById("old");
+    //    document.getElementById("box").replaceChild(newPara, oldP)
+
+    // let copy = document.getElementById("box").cloneNode(false);
+    // // if we write true it will copy child node as well
+    // document.body.appendChild(copy)
+     
+
+    // let box = document.getElementById("box")
+    // let oldelement = document.getElementById("old");
+    // box.removeChild(oldelement)
+     
+
+    let newli = document.createElement("li")
+    newli.textContent="grapes";
+    let list = document.getElementById("fruits");
+    let firstItem = list.firstElementChild;
+    list.insertBefore(newli, firstItem);
+
+
+
+    </script>
+</body>
+</html>

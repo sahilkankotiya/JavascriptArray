@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="result">Hello World</span><br>
+    <input type="radio" value="male" name="gender">Male
+    <input type="radio" value="Female" name="gender">Female
+
+     <p id="Para1">Lorem ipsum dolor sit amet.</p>
+     <p id="Para2">Lorem ipsum dolor sit amet.</p>
+    
+      <span class="greet">Welcome to Parul University</span>
+        
+      <p class="Para3">Lorem ipsum dolor sit amet.</p>
+      <p class="Para3">Lorem ipsum dolor sit amet.</p>
+
+    <script>
+      const para = document.getElementById("result")
+     // console.log(para)
+      console.log(para.innerHTML)
+      console.log(para.innerText)
+
+      const form = document.getElementsByName("gender")
+      console.log(form.length)
+      console.log(form[0])
+      console.log(form[1])
+      
+      const identity = document.getElementsByTagName("p")
+      console.log(identity)
+      const value = identity[1].innerText;
+      console.log(value)
+   
+      const wish = document.getElementsByClassName("greet");
+      console.log(wish)
+      console.log(wish[0])
+      console.log(wish[0].innerHTML)
+
+      const query = document.querySelector(".Para3");
+      console.log(query)
+      console.log(query.innerHTML)
+
+      const queryAll = document.querySelectorAll(".Para3");
+      console.log(queryAll)
+    </script>
+</body>
+</html>

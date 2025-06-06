@@ -126,3 +126,4 @@ return combinedArr;
 let names = ["Ram", "Shyam", "Mohan"];
 let marks = [80, 90, 85];
 console.log(nameAndarray(names, marks));
+

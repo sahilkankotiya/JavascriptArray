@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="www.google.com" id="link"></a>
+    <img src="../images/tiger.jpg" alt="tiger" id="img"> 
+
+    <input id="user" type="text" placeholder="enter your name"> -->
+
+     <!-- <p id="para">Lorem ipsum dolor sit amet consectetur.</p> -->
+    
+     <div id="box">
+        <p id="text" style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, earum.</p>
+     </div>
+
+
+    <script>
+    // let element = document.getElementById("link");
+    // let result = element.getAttribute("href");
+    // console.log(result);
+
+
+    // let animal = document.getElementById("img");
+    // let res = animal.getAttribute("alt");
+    // console.log(res)
+
+    // let element = document.getElementById("link");
+    // let result = element.setAttribute("href", "https://www.amazon.in/");
+    // let value = element.getAttribute("href");
+    // console.log(value);
+
+    // let animal = document.getElementById("img");
+    // let res = animal.setAttribute("alt", "Animal");
+    // let res1 = animal.getAttribute("alt")
+    // console.log(res1)
+
+    // let element1 = document.getElementById("user");
+    // let result2 = element1.hasAttribute("class");
+    // let result4 = element1.removeAttribute("placeholder");
+    // let result3 = element1.hasAttribute("placeholder");
+    // console.log(result2);
+    // console.log(result3);
+    // console.log(result4);
+
+    //   let newPara = document.getElementById("para");
+    //   newPara.style.backgroundColor="Aqua";
+    //   newPara.style.border="2px solid red"
+    //   newPara.style.height="200px"
+    //   newPara.style.width="200px"
+    //   newPara.style.textAlign="center"
+
+    // newPara.style.cssText="background:Aqua; width:200px; height:200px; border:2px dashed red "
+
+    //  let element = document.getElementById("text");
+    //  let styles = window.getComputedStyle(element);
+    //  console.log(styles.color)
+      
+    let element = document.getElementById("box");
+    element.style.cssText="background:Aqua; width:200px; height:200px; border:2px dashed red"
+    let styles = window.getComputedStyle(element);
+    console.log(styles)
+    console.log(styles.border)
+
+    </script>
+</body>
+</html>
