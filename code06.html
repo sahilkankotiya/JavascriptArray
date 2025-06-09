@@ -13,10 +13,21 @@
 
      <!-- <p id="para">Lorem ipsum dolor sit amet consectetur.</p> -->
     
-     <div id="box">
+     <!-- <div class="oldclass" id="box">
         <p id="text" style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, earum.</p>
-     </div>
+     </div> -->
 
+     <button id="modebutton">toggle mode</button>
+     <div id="container">theme change using css</div>
+
+     <style>
+       
+        .dark{
+            background-color: black;
+            color: white;
+        }
+     </style>
+      
 
     <script>
     // let element = document.getElementById("link");
@@ -59,12 +70,33 @@
     //  let styles = window.getComputedStyle(element);
     //  console.log(styles.color)
       
-    let element = document.getElementById("box");
-    element.style.cssText="background:Aqua; width:200px; height:200px; border:2px dashed red"
-    let styles = window.getComputedStyle(element);
-    console.log(styles)
-    console.log(styles.border)
+    // let element = document.getElementById("box");
+    // element.style.cssText="background:Aqua; width:200px; height:200px; border:2px dashed red"
+    // let styles = window.getComputedStyle(element);
+    // console.log(styles)
+    // console.log(styles.border)
+     
+    // let element = document.getElementById("box");
+    // console.log(element.className)
+    // element.className="new-class-value"
+    // console.log(element.className)
 
+//     let btn = document.getElementById("btn");
+//     //add class
+//     btn.classList.add("rounded");
+//     //remove class
+//     btn.classList.remove("primary")
+//     //toggle class
+//    // btn.classList.toggle("active");
+    
+//     console.log(btn.classList.contains("active"))
+         
+         let togglebtn = document.getElementById("modebutton");
+        let container = document.getElementById("container");
+        togglebtn.addEventListener("click", function(){
+            container.classList.toggle("dark");
+        });
+  
     </script>
 </body>
 </html>

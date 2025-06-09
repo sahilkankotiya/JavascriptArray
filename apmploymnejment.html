@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Portal</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+        form input, form button{
+            margin: 5px;
+            padding: 8px;
+        }
+        table{
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th td{
+            border: 1px solid grey;
+            padding
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Management Portal</h2>
+    <form id="employee-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="email" placeholder="Email" required>
+        <input type="text" id="role" placeholder="Role" required>
+        <button type="submit">Add Employee</button>
+    </form>
+    <table id="employee-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
